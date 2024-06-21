@@ -1,9 +1,67 @@
 .headerContainer {
     display: flex;
+    flex-direction: row;
+   justify-content: space-between;
     background-color: blue;
-    height: 50px;
-    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding: 20px;
     
+
+
 }
 
-   
+.paieska {
+       width: 150px;
+       height: 40px;
+       padding: 10px 50px 10px 10px;
+       border-radius: 5px;
+       border: none;
+       background-color: white;
+       color: #C0C0C0;
+       position: relative;
+}
+
+.fa fa-search {
+    color: #C0C0C0;
+    position: absolute;
+    border-top: 60px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.headericons {
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    margin: 15px;
+    gap: 7px;
+}
+
+.info {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #EEF2F9;
+    border-radius: 50%;
+
+}
+
+.name {
+    font-size: 8px;
+    
+}
+    
+
+
+
+.droparrow {
+display: flex;
+align-items: center;
+}
