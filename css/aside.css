@@ -1,0 +1,11 @@
+aside {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-icones {
+    width: 5px;
+    height: 5px;
+    gap: 5px;
+}
