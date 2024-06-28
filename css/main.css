@@ -1,28 +1,100 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-   width: 100%;
+   min-height: 100vh;
    display: flex;
+   
 
     
       
 }
 header {
-    display: flex;
+    align-items: start;
 }
 
 main {
-    background-color: yellow;
+    background-color: rgb(238, 242, 249);
    width: calc(100% - 100px);
-
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   font-family: Arial, Helvetica, sans-serif;
     
-   
 }
 
-
+main > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
   
+.apacia {
+    display: flex;
+    flex-direction: row;
 }
 
 
+.dashboard-table {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 350px;
+    border-radius: 30px;
+    padding: 50px;
+}
 
 
+.dashboard-table .layout {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 20px 0 20px 0;
+
+}
+
+.dashboard-table p {
+    font-size: 1rem;
+    margin: 15px 0 15px 0;
+}
+
+.layout {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.bear {
+    display: flex;
+    position: absolute;
+    margin-top: -9rem;
+    margin-left: 20rem;
+}
+
+.rodykle {
+    width: 15px;
+    height: 15px;
+}
+
+.layout p {
+    font-size: 0.7rem;
+
+}
+
+.notif-isdestymas div {
+    background-color: white;
+    margin: 1.5rem;
+    padding: 10px;
+}
