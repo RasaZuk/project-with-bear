@@ -2,16 +2,11 @@ aside {
     width: 100px;
     align-items: center;
     flex-direction: column;
-    background-color: antiquewhite;
-  
 }
 
 .aside-icons {
     display: flex;
-   
     gap: 30px;
-    
-
 }
 
 
@@ -22,15 +17,14 @@ aside {
 }
 
 .side-icons {
-display: flex;
-flex-direction: column;
-gap: 30px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 
 .settings {
     display: flex;
-    margin: 200px 20px 50px 20px;
+    margin: 550px 20px 50px 20px;
 
 }

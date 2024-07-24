@@ -7,11 +7,11 @@
 body {
    min-height: 100vh;
    display: flex;
-   
-
-    
-      
+   font-family: Arial, Helvetica, sans-serif;
+ 
 }
+
+
 header {
     align-items: start;
 }
@@ -26,53 +26,113 @@ main {
     
 }
 
-main > section {
+main section {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2rem;
-}
-  
-.apacia {
-    display: flex;
-    flex-direction: row;
+   
 }
 
 
+
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 6rem 2rem 6rem;
+
+}  
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+
+.buttons div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+}
+
+.clear {
+    border: 1px solid rgba(207, 213, 222);
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    width: 10rem;
+}
+
+.clear p {
+    margin-right: 1.5rem;
+}
+
+.info svg{
+    color: #A3ABB7;
+   }
+
+.blue {
+    background-color: #537CBE;
+    color: white;
+    border-radius: 0.5rem;
+    width: 11rem;
+    padding: 0.7rem;
+    align-items: center;
+    box-shadow: 1px 10px 5px rgba(155, 179, 217, 0.4);
+}
+
+.mid-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0 6rem 1rem 6rem;
+
+}
 .dashboard-table {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 800px;
-    height: 350px;
+    width: 60rem;
+    height: 400px;
     border-radius: 30px;
     padding: 50px;
+    
 }
 
-
-.dashboard-table .layout {
-    display: flex;
-    flex-direction: row;
-}
 
 h3 {
     font-size: 2.5rem;
-    margin: 20px 0 20px 0;
+    margin: 25px 0 20px 0;
 
 }
 
 .dashboard-table p {
-    font-size: 1rem;
-    margin: 15px 0 15px 0;
+    font-size: 1.2rem;
+    margin: 1.2rem 0 1rem 0;
 }
 
-.layout {
-    width: 45%;
+.dashboard-table .layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 21rem;
+
+}
+
+.layout div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-decoration: none;
-    position: relative;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+.rodykle {
+    width: 25px;
+    height: 25px;
+}
+
+.layout p {
+    font-size: 1rem;
 
 }
 
@@ -80,21 +140,83 @@ h3 {
     display: flex;
     position: absolute;
     margin-top: -9rem;
-    margin-left: 20rem;
+    margin-left: 30rem;
 }
 
-.rodykle {
-    width: 15px;
-    height: 15px;
+.notifications div {
+    display: grid;
+    margin: 0 0 1rem 3rem;
+    
 }
 
-.layout p {
-    font-size: 0.7rem;
 
+.notifications .top-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.notif-isdestymas div {
+
+.top-line p {
+    margin-left: 6rem;
+}
+
+
+.notif-layout div {
+    display: flex;
     background-color: white;
-    margin: 1.5rem;
-    padding: 10px;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.three-rows {
+    display: flex;
+
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.three-rows :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+.last-container {
+    background-color: white;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 20rem;
+    padding: 1.5rem;
+}
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-top svg {
+    margin-top: 1.2rem;
+    color: rgb(132, 142, 152);
+}
+
+.last-container p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    width: 65%;
+    color: #A3ABB7;
+}
+
+.last-container h2 {
+    margin-top: 3rem;
+    color: rgb(50, 66, 84);
 }

@@ -33,7 +33,14 @@
         <header>
             <div class="headerContainer">
                 <button class="paieska">Search...</button>
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" id="search" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
+                		c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
+                		 M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
+                		z"></path>
+                    </g>
+                </svg>
                 <div class="data">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                     <p>3 August, 2021</p>
@@ -52,96 +59,157 @@
                 </div>
         </header>
 
-        <section>
-            <section class="dashboard">
+
+        <section class="dashboard">
+            <div>
                 <h2>Dashboard</h2>
-                <div class="dashboard-table">
-                    <h3>Hi, George!</h3>
-                    <p>What are we doing today?</p>
-                    <div class="layout">
+            </div>
+            <div class="buttons">
+                <div class="clear">
+                    <p>By day</p>
+                    <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
+                    </svg>
+                </div>
+                <div class="info">
+                    <svg height="30px" width="30px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 4v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1zm8 3h2v2h-2V7zm0 4h2v6h-2v-6z"></path>
+                    </svg>
+                </div>
+                <div class="blue">
+                    <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"></path>
+                    </svg>
+                    <p>Create new</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mid-section">
+            <div class="dashboard-table">
+                <h3>Hi, George!</h3>
+                <p>What are we doing today?</p>
+                <div class="layout">
+                    <div>
                         <img class="rodykle" src="./images/rodykle1.jpg" alt="Ikona">
                         <p>Check Calendar</p>
+                    </div>
+                    <div>
                         <img class="rodykle" src="./images/rodykle2.jpg" alt="Ikona">
                         <p>Manage Wallet</p>
+                    </div>
+                    <div>
                         <img class="rodykle" src="./images/rodykle3.jpg" alt="Ikona">
                         <p>Manage Workers</p>
+                    </div>
+                    <div>
                         <img class="rodykle" src="./images/rodykle4.jpg" alt="Ikona">
                         <p>Manage Projects</p>
                     </div>
-                    <img class="bear" src="./images/meskiukas.png" alt="meskiukas">
                 </div>
-            </section>
+                <img class="bear" src="./images/meskiukas.png" alt="meskiukas">
+            </div>
 
-            <section class="notification">
-                <div>
-                    <button>By day</button>
-                    <button>i</button>
-                    <button>Create new</button>
-                </div>
-                <div>
-                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <div class="notifications">
+                <div class="top-line">
+                    <svg height="30px" width="30px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1c3.681 0 7 2.565 7 6v4.539c0 .642.189 1.269.545 1.803l2.2 3.298A1.517 1.517 0 0 1 20.482 19H15.5a3.5 3.5 0 1 1-7 0H3.519a1.518 1.518 0 0 1-1.265-2.359l2.2-3.299A3.25 3.25 0 0 0 5 11.539V7c0-3.435 3.318-6 7-6ZM6.5 7v4.539a4.75 4.75 0 0 1-.797 2.635l-2.2 3.298-.003.01.001.007.004.006.006.004.007.001h16.964l.007-.001.006-.004.004-.006.001-.006a.017.017 0 0 0-.003-.01l-2.199-3.299a4.753 4.753 0 0 1-.798-2.635V7c0-2.364-2.383-4.5-5.5-4.5S6.5 4.636 6.5 7ZM14 19h-4a2 2 0 1 0 4 0Z"></path>
+                    </svg>
                     <h3>Notifications</h3>
                     <p>See all</p>
                 </div>
-                <div class="notif-isdestymas">
-                    <div>
-                        <img src="./images/notif_pirma.png" alt="geltonaikona">
-                        <p>You've added new project recently, with no deadline.</p>
-                        <img src="./images/sonine_rodykle.jpg" alt="sonine rodykle">
+
+                <div class="notif-layout">
+                    <div class="three-rows">
+                        <img src="./images/notif_pirma.png" alt="yellowicon">
+                        <div>
+                            <h4>You've added new project recently, with no deadline.</h4>
+                        </div>
+                        <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M210.7 147.6c7.5-7.5 19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81.1-81.9-81.1c-7.6-7.4-7.6-19.6 0-27.2z"></path>
+                            <path d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm32 0c0-47 18.3-91.2 51.6-124.4C164.8 98.3 209 80 256 80s91.2 18.3 124.4 51.6C413.7 164.8 432 209 432 256s-18.3 91.2-51.6 124.4C347.2 413.7 303 432 256 432s-91.2-18.3-124.4-51.6C98.3 347.2 80 303 80 256z"></path>
+                        </svg>
                     </div>
-                    <div>
-                        <img src="./images/notif_antra.png" alt="geltonaikona">
-                        <p>You've added new project recently, with no deadline.</p>
-                        <img src="./images/sonine_rodykle.jpg" alt="sonine rodykle">
+                    <div class="three-rows">
+                        <img src="./images/notif_antra.png" alt="redicon">
+                        <div>
+                            <h4>Project owner Adam requested a refund</h4>
+                        </div>
+                        <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M210.7 147.6c7.5-7.5 19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81.1-81.9-81.1c-7.6-7.4-7.6-19.6 0-27.2z"></path>
+                            <path d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm32 0c0-47 18.3-91.2 51.6-124.4C164.8 98.3 209 80 256 80s91.2 18.3 124.4 51.6C413.7 164.8 432 209 432 256s-18.3 91.2-51.6 124.4C347.2 413.7 303 432 256 432s-91.2-18.3-124.4-51.6C98.3 347.2 80 303 80 256z"></path>
+                        </svg>
                     </div>
-                    <div>
-                        <img src="./images/notif_trecia.png" alt="geltonaikona">
-                        <p>You've added new project recently, with no deadline.</p>
-                        <img src="./images/sonine_rodykle.jpg" alt="sonine rodykle">
+                    <div class="three-rows">
+                        <img src="./images/notif_trecia.png" alt="blueicon">
+                        <div>
+                            <h4>Today, it's Tatia's anniversary!</h4>
+                            <p>Wish her happy birthday!</p>
+                        </div>
+                        <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M210.7 147.6c7.5-7.5 19.8-7.5 27.3 0l95.4 95.7c7.3 7.3 7.5 19.1.6 26.6l-94 94.3c-3.8 3.8-8.7 5.7-13.7 5.7-4.9 0-9.9-1.9-13.6-5.6-7.5-7.5-7.6-19.7 0-27.3l79.9-81.1-81.9-81.1c-7.6-7.4-7.6-19.6 0-27.2z"></path>
+                            <path d="M48 256c0 114.9 93.1 208 208 208s208-93.1 208-208S370.9 48 256 48 48 141.1 48 256zm32 0c0-47 18.3-91.2 51.6-124.4C164.8 98.3 209 80 256 80s91.2 18.3 124.4 51.6C413.7 164.8 432 209 432 256s-18.3 91.2-51.6 124.4C347.2 413.7 303 432 256 432s-91.2-18.3-124.4-51.6C98.3 347.2 80 303 80 256z"></path>
+                        </svg>
                     </div>
                 </div>
-
-            </section>
-
-            <section class="apacia">
-                <div class="apacia-vienas">
-                    <div>
-                        <img src="" alt="kaire ikonele">
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
-                    <p>Potential Montly Profit</p>
-                    <p>$24,042,000</p>
-                </div>
-
-                <div class="apacia-du">
-                    <div>
-                        <img src="" alt="kaire ikonele">
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
-                    <p>Workers Wage This Month</p>
-                    <p>$8,402,000</p>
-                </div>
-
-                <div class="apacia-trys">
-                    <div>
-                        <img src="" alt="kaire ikonele">
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
-                    <p>Average Project Length</p>
-                    <p>2weeks</p>
-                </div>
-
-                <div class="apacia-keturi">
-                    <div>
-                        <img src="" alt="kaire ikonele">
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
-                    <p>Average Income per Project</p>
-                    <p>$12,000</p>
-                </div>
-
-            </section>
+            </div>
         </section>
+
+
+        <section class="last">
+            <div class="last-container">
+                <div class="container-top">
+                    <img src="./images/ikona_profit.png" alt="kaire ikonele">
+                    <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p>Potential Montly Profit</p>
+                    <h2>$24,042,000</h2>
+                </div>
+            </div>
+
+            <div class="last-container">
+                <div class="container-top">
+                    <img src="./images/ikona_wage.png" alt="kaire ikonele">
+                    <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p>Workers Wage This Month</p>
+                    <h2>$8,402,000</h2>
+                </div>
+            </div>
+
+            <div class="last-container">
+                <div class="container-top">
+                    <img src="./images/ikona_average.png" alt="kaire ikonele">
+                    <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p>Average Project Length</p>
+                    <h2>2weeks</h2>
+                </div>
+            </div>
+
+            <div class="last-container">
+                <div class="container-top">
+                    <img src="./images/ikona_income.png" alt="kaire ikonele">
+                    <svg height="20px" width="20px" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p>Average Income per Project</p>
+                    <h2>$12,000</h2>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
