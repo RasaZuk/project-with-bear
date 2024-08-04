@@ -18,18 +18,16 @@ header {
 
 main {
     background-color: rgb(238, 242, 249);
-   width: calc(100% - 100px);
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   font-family: Arial, Helvetica, sans-serif;
-    
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main section {
     display: flex;
     flex-direction: row;
-   
 }
 
 
@@ -40,15 +38,13 @@ main section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 6rem 2rem 6rem;
-
+    margin: 3rem 6rem 2rem 8rem;
 }  
 
 .buttons {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    
+    gap: 2rem;   
 }
 
 .buttons div {
@@ -92,38 +88,33 @@ main section {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 60rem;
-    height: 400px;
+    width: 75rem;
+    height: 350px;
     border-radius: 30px;
     padding: 50px;
     
 }
 
 
-h3 {
+h1 {
     font-size: 2.5rem;
-    margin: 25px 0 20px 0;
+    padding: 0 0 1rem 1rem;
 
 }
 
 .dashboard-table p {
     font-size: 1.2rem;
     margin: 1.2rem 0 1rem 0;
+    color: #A3ABB7;
 }
 
-.dashboard-table .layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 21rem;
 
-}
 
-.layout div {
+.layout {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .rodykle {
@@ -133,50 +124,58 @@ h3 {
 
 .layout p {
     font-size: 1rem;
-
 }
 
 .bear {
     display: flex;
     position: absolute;
-    margin-top: -9rem;
-    margin-left: 30rem;
+    top: 6rem;
+    left: 35rem;
 }
 
 .notifications div {
-    display: grid;
-    margin: 0 0 1rem 3rem;
-    
+    margin: 1rem 0 1rem 2rem;
+
 }
 
 
 .notifications .top-line {
     display: flex;
-    justify-content: center;
+    padding-left: 2rem;
     align-items: center;
     gap: 0.5rem;
 }
 
 
 .top-line p {
-    margin-left: 6rem;
+    padding-left: 20rem;
+    color: blue;
 }
 
 
 .notif-layout div {
     display: flex;
     background-color: white;
+    width: 30rem;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 0.12rem;
 }
 
 .three-rows {
     display: flex;
-
     align-items: center;
     gap: 1rem;
-
 }
+
+.three-rows div {
+    width: 63%;
+    padding: 0.1rem;
+}
+
+.three-rows img {
+    padding: 0.5rem;
+}
+
 
 .three-rows :nth-child(2) {
     display: flex;
@@ -188,15 +187,16 @@ h3 {
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
+    margin-top: 2rem;
     
 }
 
 .last-container {
     background-color: white;
     border-radius: 2rem;
-    width: 20rem;
-    height: 20rem;
-    padding: 1.5rem;
+    width: 18rem;
+    height: 15rem;
+    padding: 1rem;
 }
 
 .container-top {
@@ -210,13 +210,14 @@ h3 {
 }
 
 .last-container p {
-    margin-top: 3rem;
-    font-size: 1.5rem;
-    width: 65%;
+    margin: 2rem 0 2rem 1rem;
+    font-size: 1rem;
+    width: 50%;
     color: #A3ABB7;
 }
 
 .last-container h2 {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+    margin: 2rem 0 2rem 1rem;
     color: rgb(50, 66, 84);
 }
